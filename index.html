@@ -3,78 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scary Movie 6 | Oficjalna Strona</title>
-  <meta name="description" content="Scary Movie 6 nadchodzi do kin. Sprawdź zwiastun, obsadę i datę premiery.">
+  <title>Scary Movie 6 | Concept</title>
+  <meta name="description" content="Strona promocyjna Scary Movie 6 w stylu szkicu koncepcyjnego.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="grain"></div>
-  <header class="topbar">
-    <p class="brand">SCARY MOVIE 6</p>
-    <a class="btn btn-small" href="#premiera">Kup bilety</a>
-  </header>
-
-  <main>
-    <section class="hero">
-      <p class="eyebrow">Nowy rozdział kultowej parodii horrorów</p>
-      <h1>SCARY<br> MOVIE <span>6</span></h1>
-      <p class="lead">Krzyk, śmiech i totalny chaos wracają na wielki ekran. Tym razem nic nie jest bezpieczne: ani bohaterowie, ani gatunek.</p>
-      <div class="hero-actions">
-        <a class="btn" href="#zwiastun">Zobacz zwiastun</a>
-        <a class="btn btn-outline" href="#premiera">Data premiery</a>
+  <div class="canvas">
+    <header class="top">
+      <div class="logo-box">
+        <p class="logo-title">ScaryMovie6</p>
+        <p class="logo-sub">Logo</p>
       </div>
-    </section>
 
-    <section class="panel" id="zwiastun">
-      <div class="panel-text">
-        <h2>Zwiastun</h2>
-        <p>2 minuty czystego absurdu. Kliknij i uruchom teaser w modalnym oknie.</p>
+      <nav class="menu">
+        <a href="#zwiastun">zwiastun</a>
+        <a href="#obsada">obsada</a>
+        <a href="#premiera">premiera</a>
+        <a href="#bilety">bilety</a>
+      </nav>
+    </header>
+
+    <div class="line line-top"></div>
+    <div class="line line-left-upper"></div>
+    <div class="line line-right-upper"></div>
+    <div class="line line-left-lower"></div>
+    <div class="line line-right-lower"></div>
+    <div class="line line-mid"></div>
+    <div class="line line-bottom"></div>
+
+    <main>
+      <p class="headline">WHASSUP</p>
+      <section class="poster" id="zwiastun">
+        <img src="wawmetrownetrzed.jpg" alt="Wnetrze wagonu metra">
+      </section>
+
+      <section class="info" id="obsada">
+        <p>Parodia wraca do kin. Wiecej chaosu, wiecej gagow, wiecej kultowych nawiazan.</p>
+      </section>
+    </main>
+
+    <footer id="premiera">
+      <p>FOOTER lorem ipsum</p>
+      <div class="marks" id="bilety" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <button class="trailer-card" id="openTrailer" type="button" aria-label="Otwórz zwiastun">
-        <p>PLAY</p>
-      </button>
-    </section>
-
-    <section class="columns">
-      <article class="card">
-        <h3>Fabuła</h3>
-        <p>Gdy tajemnicza kaseta VHS znów zaczyna krążyć po mieście, grupa przyjaciół odkrywa, że każda scena znanych horrorów może wydarzyć się naprawdę... tylko dużo głupiej.</p>
-      </article>
-      <article class="card">
-        <h3>Obsada</h3>
-        <p>Amanda Torres, Leo Hart, Nina Blake i goście specjalni, których lepiej nie spoilować. Powraca też kilku bohaterów z poprzednich części.</p>
-      </article>
-      <article class="card" id="premiera">
-        <h3>Premiera</h3>
-        <p class="premiere-date">31 października 2026</p>
-        <p>Przedsprzedaż już trwa. Rezerwuj miejsca i przygotuj się na noc pełną strachu i śmiechu.</p>
-      </article>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Scary Movie 6. Wszystkie prawa zastrzeżone.</p>
-  </footer>
-
-  <dialog id="trailerModal">
-    <div class="modal-content">
-      <button class="close" id="closeTrailer" aria-label="Zamknij">×</button>
-      <h3>Oficjalny teaser</h3>
-      <p>Zobacz najnowszy materiał promujący Scary Movie 6.</p>
-      <div class="video-wrap">
-        <iframe
-          id="trailerFrame"
-          title="Scary Movie 6 - trailer"
-          src=""
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-  </dialog>
-
-  <script src="script.js"></script>
+    </footer>
+  </div>
 </body>
 </html>
