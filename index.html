@@ -3,54 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scary Movie 6 | Concept</title>
-  <meta name="description" content="Strona promocyjna Scary Movie 6 w stylu szkicu koncepcyjnego.">
-  <link rel="stylesheet" href="styles.css">
+  <title>Scary Movie 6</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="canvas">
-    <header class="top">
-      <div class="logo-box">
-        <p class="logo-title">ScaryMovie6</p>
-        <p class="logo-sub">Logo</p>
+  <header class="hero">
+    <nav>
+      <div class="logo">
+        Scary Movie <span>6</span>
+      </div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#trailer">Trailer</a>
+        <a href="#cast">Cast</a>
+      </div>
+    </nav>
+
+    <div class="hero-center">
+      <h1>WHAAAZUUUP</h1>
+    </div>
+  </header>
+
+  <section class="ghost-section">
+    <img src="tt.png" class="ghost" alt="Scary Movie logo">
+  </section>
+
+  <section class="trailer" id="trailer">
+    <h2>OFFICIAL TRAILER</h2>
+    <div class="video">
+      <iframe
+        width="800"
+        height="450"
+        src="https://www.youtube-nocookie.com/embed/0fZ58S-7QP0"
+        title="Scary Movie 6 trailer"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p class="tagline">
+      The horror comedy is about to get ridiculous.
+    </p>
+  </section>
+
+  <section class="cast" id="cast">
+    <h2>MEET THE IDIOTS</h2>
+    <div class="cast-grid">
+      <div class="person">
+        <img src="wawmetrownetrzed.jpg" alt="Kim">
+        <h3>KIM</h3>
       </div>
 
-      <nav class="menu">
-        <a href="#zwiastun">zwiastun</a>
-        <a href="#obsada">obsada</a>
-        <a href="#premiera">premiera</a>
-        <a href="#bilety">bilety</a>
-      </nav>
-    </header>
-
-    <div class="line line-top"></div>
-    <div class="line line-left-upper"></div>
-    <div class="line line-right-upper"></div>
-    <div class="line line-left-lower"></div>
-    <div class="line line-right-lower"></div>
-    <div class="line line-mid"></div>
-    <div class="line line-bottom"></div>
-
-    <main>
-      <p class="headline">WHASSUP</p>
-      <section class="poster" id="zwiastun">
-        <img src="wawmetrownetrzed.jpg" alt="Wnetrze wagonu metra">
-      </section>
-
-      <section class="info" id="obsada">
-        <p>Parodia wraca do kin. Wiecej chaosu, wiecej gagow, wiecej kultowych nawiazan.</p>
-      </section>
-    </main>
-
-    <footer id="premiera">
-      <p>FOOTER lorem ipsum</p>
-      <div class="marks" id="bilety" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="person">
+        <img src="concept.jpg" alt="Michael">
+        <h3>MICHAEL</h3>
       </div>
-    </footer>
-  </div>
+
+      <div class="person">
+        <img src="legal-logos.png" alt="Lila">
+        <h3>LILA</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Scary Movie 6 - Official Movie Page
+  </footer>
 </body>
 </html>
